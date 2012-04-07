@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+    xmlns:gap	= "http://phonegap.com/ns/1.0"
+    id		= "com.kinamu.kkroquotes.app"
+    version 	= "0.0.1">
+
+    <name>Kroschke Angebote</name>
+
+    <description>Angebotsformular for CRM</description>
+
+    <author href="http://www.padalton.net"
+        email="iphone@padalton.net">Stefan Wölflinger</author>
+
+    <icon src="icon.png" gap:role="default" />
+
+    <preference name="orientation" value="portrait" />
+</widget>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="js/jquery.min.js">
+        </script>
+        <script src="js/jquery.mobile-1.0.1.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" data-theme="b" id="page1">
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="refresh" class="ui-btn-active">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page3" data-theme="b" data-icon="grid">
+                                Formular
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="b" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form url="http://apptest.padalton.net/test.php" action="POST">
+                    <h3>
+                        Login
+                    </h3>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput1">
+                                User
+                            </label>
+                            <input id="textinput1" placeholder="username" value="" type="text" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput2">
+                                Password
+                            </label>
+                            <input id="textinput2" placeholder="" value="" type="password" />
+                        </fieldset>
+                    </div>
+                    <input data-theme="b" data-icon="check" data-iconpos="right" value="Login" type="submit" />
+                </form>
+            </div>
+            <div data-theme="d" data-role="footer" data-position="fixed">
+                <h5>
+                    Status
+                </h5>
+            </div>
+        </div>
+        <div data-role="page" data-theme="b" id="page2">
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="refresh">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page3" data-theme="b" data-icon="grid">
+                                Formular
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="b" data-icon="gear" class="ui-btn-active">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Default User
+                        </label>
+                        <input id="textinput3" placeholder="username" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                        <legend>
+                            Login options:
+                        </legend>
+                        <input name="checkbox2" id="checkbox2" type="checkbox" />
+                        <label for="checkbox2">
+                            Save password
+                        </label>
+                        <input name="checkbox1" id="checkbox1" type="checkbox" />
+                        <label for="checkbox1">
+                            Auto login
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" data-theme="b" id="page3">
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="b" data-icon="refresh">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page3" data-theme="b" data-icon="grid" class="ui-btn-active">
+                                Formular
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-theme="b" data-icon="gear">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>
+                    Angebot
+                </h3>
+                <form url="http://apptest.padalton.net/test.php" action="POST">
+                    <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+                        <div data-role="collapsible" data-collapsed="true">
+                            <h3>
+                                Kundendaten
+                            </h3>
+                        </div>
+                        <div data-role="collapsible" data-collapsed="true">
+                            <h3>
+                                Kommunikation
+                            </h3>
+                        </div>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <legend>
+                                Angebotsart:
+                            </legend>
+                            <input name="radiobuttons1" id="radio1" value="registration" type="radio" />
+                            <label for="radio1">
+                                Zulassung
+                            </label>
+                            <input name="radiobuttons1" id="radio2" value="transfer" type="radio" />
+                            <label for="radio2">
+                                Überführung
+                            </label>
+                        </fieldset>
+                    </div>
+                    <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                        <li data-theme="d">
+                            <a href="#page4" data-transition="pop">
+                                Zulassungsdienstleistungen
+                            </a>
+                        </li>
+                        <li data-theme="d">
+                            <a href="#page8" data-transition="pop">
+                                Überführung
+                            </a>
+                        </li>
+                        <li data-theme="d">
+                            <a href="#page9" data-transition="pop">
+                                Weitere Produkte
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div data-role="page" data-theme="d" id="page4">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    Zulassung
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Volumen / Jahr
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Händlereigene Zulassungen
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Regionale Zulassungen
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            .....etc
+                        </h3>
+                    </div>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page3" data-icon="check" data-iconpos="right">
+                    Ok
+                </a>
+            </div>
+        </div>
+        <div data-role="page" data-theme="d" id="page8">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    Überführung
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Überführungsdienstl. 1
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Überführungsdienstl. 2
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            .....etc
+                        </h3>
+                    </div>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page3" data-icon="check" data-iconpos="right">
+                    Ok
+                </a>
+            </div>
+        </div>
+        <div data-role="page" data-theme="d" id="page9">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    Weitere Produkte
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Produktinformationen
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Händlereigene Zulassungen
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            .....etc
+                        </h3>
+                    </div>
+                </div>
+                <a data-role="button" data-transition="fade" data-theme="b" href="#page3" data-icon="check" data-iconpos="right">
+                    Ok
+                </a>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
